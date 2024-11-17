@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> signInManager
+@inject UserManager<IdentityUser> signInManager
+@{
     ViewData["Title"] = "Inicio";
 }
 
@@ -62,7 +65,8 @@
                         border-color: #555; 
                     }
                </style>
-            <a class="btn-getstarted" href="index.html#about">Inicio Sesión</a>
+            <a class="btn-getstarted" href="Login">Inicio Sesión</a>
+            <a class="btn-getstarted" href="register">Registrate</a>
         </div>
     </header>
     <head>
